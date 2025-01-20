@@ -1,0 +1,18 @@
+[package]
+name = "noob-builder"
+version = "0.1.0"
+edition = "2021"
+description = "A simple proc macro that allows the user to auto generate a simple builder pattern."
+license = "MIT"
+homepage = "https://github.com/noobHuKai/noob-builder"
+repository = "https://github.com/noobHuKai/noob-builder"
+readme = "README.md"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0" }
+quote = "1.0"
+proc-macro2 = "1.0"
+darling = "0.20.10"
