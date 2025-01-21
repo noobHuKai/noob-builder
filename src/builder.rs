@@ -77,7 +77,7 @@ impl BuilderContext {
         quote! {
             /// Builder 结构
             #[derive(Debug, Default)]
-            struct #builder_name {
+            pub struct #builder_name {
                 #(#optionized_fields,)*
             }
 
@@ -94,7 +94,7 @@ impl BuilderContext {
 
             /// 为使用 Builder 的原结构提供 builder() 方法，生成 Builder 结构
             impl #name {
-                fn builder() -> #builder_name {
+                pub fn builder() -> #builder_name {
                     Default::default()
                 }
             }

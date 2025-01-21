@@ -1,6 +1,6 @@
 [package]
 name = "noob-builder"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A simple proc macro that allows the user to auto generate a simple builder pattern."
 license = "MIT"
